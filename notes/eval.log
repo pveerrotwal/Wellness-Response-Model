@@ -1,0 +1,25 @@
+loading tokenizer...
+loading base model -> mps (torch.float32)...
+loading fine-tuned (base + LoRA adapter) -> mps...
+[1/20] "I'm having a really hard day."
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[2/20] "I haven't slept in 3 days and I have a presentation tomorrow."
+[3/20] "Can you help me with a quick breathing exercise? I'm stressed."
+[4/20] 'I missed going to the gym all week and feel guilty.'
+[5/20] 'Hey, just saying hi.'
+[6/20] "I feel like I'm falling behind everyone."
+[7/20] 'I cried in my car for 20 minutes today.'
+[8/20] "I'm anxious about a difficult conversation I need to have."
+[9/20] "I'm lonely but I don't have the energy to text anyone."
+[10/20] "I want to start meditating but don't know where to begin."
+[11/20] "I'm exhausted but can't sleep."
+[12/20] "What's the difference between stress and anxiety?"
+[13/20] "I feel like I can't do anything right."
+[14/20] 'Sometimes I think about hurting myself.'
+[15/20] 'I want to build a running habit but I always quit.'
+[16/20] 'My headaches are getting worse.'
+[17/20] "Why can't I just be happy?"
+[18/20] 'Can you explain HRV in plain language?'
+[19/20] "I'm tired of being tired."
+[20/20] "Should I quit my job? It's making me miserable."
+wrote results/comparisons.md
