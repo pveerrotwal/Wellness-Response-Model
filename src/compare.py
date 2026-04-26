@@ -1,28 +1,3 @@
-"""
-Side-by-side: base TinyLlama vs our fine-tuned wellness adapter.
-
-Two modes:
-
-  python src/compare.py --eval
-      Generate completions for every prompt in data/eval_prompts.jsonl,
-      write results/comparisons.md.
-
-  python src/compare.py --interactive
-      Type a prompt, see both responses inline. Handy for exploring.
-
-Design notes:
-  - Greedy-ish sampling with a small temperature. Fully greedy can make
-    TinyLlama repeat itself, and a very high temperature hides the
-    actual style difference we're trying to show. temp=0.6 is a decent
-    middle ground.
-  - Same seed, same generation settings for both models. If we vary
-    those between runs, we're not comparing the models, we're comparing
-    decoding strategies.
-  - The base model's responses sometimes leak training artifacts (e.g.
-    random "Sure, here's..."). We do not clean those up - part of what
-    the comparison is supposed to show is that the base model is a
-    generic assistant, warts and all.
-"""
 
 import argparse
 import json
